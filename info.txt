@@ -4,7 +4,7 @@ https://github.com/illicchpv/band-Tenloc
 https://illicchpv.github.io/band-Tenloc/
   сайт ветка master
 
-
+=============================================================================
 кусок из setting.json связанный с настройками live sass  
   \file->Prefer..->Settings \ ткнуть на значек справа сверху \open settings\
 
@@ -34,3 +34,15 @@ https://illicchpv.github.io/band-Tenloc/
       "> 1%",
       "last 2 versions"
   ],
+=============================================================================
+используемые фонты
+  Montserrat Regular    400
+  Montserrat Medium     500
+  Montserrat SemiBold   600
+  Montserrat Bold       700
+  Montserrat ExtraBold  800
+  Montserrat Black      900
+  Candal Regular
+  Roboto Regular
+=============================================================================
+
