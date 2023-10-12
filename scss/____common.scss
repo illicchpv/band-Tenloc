@@ -1,4 +1,24 @@
+// mini-reset
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; 
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
 //
+
 /* montserrat-regular - cyrillic_latin */
 @font-face {
   font-display: swap;
