@@ -2,7 +2,7 @@ https://github.com/illicchpv/band-Tenloc
   репозиторий
 
 https://illicchpv.github.io/band-Tenloc/
-  сайт ветка master
+  опубликовано - сайт ветка master
 
 =============================================================================
 кусок из setting.json связанный с настройками live sass  
