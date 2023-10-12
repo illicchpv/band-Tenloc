@@ -1,6 +1,6 @@
 // mini-reset
 html {
-  box-siing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   font-size: 100%;
@@ -10,6 +10,12 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; 
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 //
 
