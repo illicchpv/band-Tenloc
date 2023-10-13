@@ -139,7 +139,7 @@ body {
   gap: 7%;
 }
 .testMenu__page a {
-  color: inherit;
+  color: black;
   display: block;
   padding: 3px 10px;
   text-decoration: none;
@@ -156,5 +156,6 @@ body {
 }
 
 body {
-  color: aqua;
+  color: var(--txtColor);
+  background-color: var(--bgColor);
 }
