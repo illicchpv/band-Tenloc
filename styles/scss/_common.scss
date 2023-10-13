@@ -1,0 +1,54 @@
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; 
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+// body {
+//   background-color: red;
+//   font-family: 'Montserrat', sans-serif;
+// }
+
+// .montserrat, font1 {
+//   font-family: 'Montserrat', sans-serif;
+// }
+
+// .candal, font2 {
+//   font-family: 'Candal', sans-serif;
+// }
+
+// .roboto, font3 {
+//   font-family: 'Roboto', sans-serif;
+// }
