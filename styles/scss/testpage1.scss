@@ -1,0 +1,18 @@
+// testpage1.scss
+@import '../common/common';
+@import '../common/testmenu';
+
+
+@import '../common/header';
+
+@import './section1';
+@import './section2';
+
+@import '../common/footer';
+
+// body{
+// }
+
+.testColor{
+  color: $testColor;
+}
