@@ -1,24 +1,3 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 100%;
-}
-
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
-}
-
 /* montserrat-regular - cyrillic_latin */
 @font-face {
   font-display: swap;
@@ -26,7 +5,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2");
+  src: url("../asset/font/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-500 - cyrillic_latin */
@@ -36,7 +15,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat-v26-cyrillic_latin-500.woff2") format("woff2");
+  src: url("../asset/font/montserrat-v26-cyrillic_latin-500.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-600 - cyrillic_latin */
@@ -46,7 +25,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-v26-cyrillic_latin-600.woff2") format("woff2");
+  src: url("../asset/font/montserrat-v26-cyrillic_latin-600.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-700 - cyrillic_latin */
@@ -56,7 +35,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v26-cyrillic_latin-700.woff2") format("woff2");
+  src: url("../asset/font/montserrat-v26-cyrillic_latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-800 - cyrillic_latin */
@@ -66,7 +45,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/montserrat-v26-cyrillic_latin-800.woff2") format("woff2");
+  src: url("../asset/font/montserrat-v26-cyrillic_latin-800.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-900 - cyrillic_latin */
@@ -76,7 +55,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/montserrat-v26-cyrillic_latin-900.woff2") format("woff2");
+  src: url("../asset/font/montserrat-v26-cyrillic_latin-900.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* candal-regular - latin */
@@ -86,7 +65,7 @@ body {
   font-family: "Candal";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/candal-v15-latin-regular.woff2") format("woff2");
+  src: url("../asset/font/candal-v15-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-regular - latin */
@@ -96,12 +75,192 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+  src: url("../asset/font/roboto-v30-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/**
+ * Original file: https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  background-color: red;
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
+  color: var(--txtColor);
+  background-color: var(--bgColor);
 }
 
 .montserrat, font1 {
@@ -114,6 +273,164 @@ body {
 
 .roboto, font3 {
   font-family: "Roboto", sans-serif;
+}
+
+.yellowLinkButtonImg {
+  width: 186.25px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #FFD600;
+  text-align: center;
+}
+
+.yellowLinkButtonImg a {
+  margin-top: 12.22px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.yellowLinkButtonImg img {
+  width: 8px;
+  margin-left: 15px;
+}
+
+.yellowImgLinkButton {
+  width: 134px;
+  height: 55px;
+  border-radius: 100px;
+  background-color: #FFD600;
+  text-align: center;
+}
+
+.yellowImgLinkButton a {
+  margin-top: 19px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.yellowImgLinkButton img {
+  width: 15px;
+  margin-right: 9px;
+}
+
+.yellowLinkButton {
+  width: 131.42px;
+  height: 34.398px;
+  border-radius: 100px;
+  background-color: #FFD600;
+  text-align: center;
+}
+
+.yellowLinkButton a {
+  margin-top: 8px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #252525;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.yellowLinkButton_all {
+  width: 194.375px;
+  height: 55px;
+}
+
+.yellowLinkButton_all a {
+  margin-top: 18px;
+  color: #000;
+  font-size: 15px;
+}
+
+.yellowLinkButton_review {
+  width: 175.5px;
+  height: 55px;
+}
+
+.yellowLinkButton_review a {
+  margin-top: 18px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.grayLinkButtonImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: #F5F5F5;
+  text-align: center;
+}
+
+.grayLinkButtonImg img {
+  width: 22px;
+  margin-top: 15px;
+}
+
+.grayLinkButtonText {
+  width: 114.25px;
+  height: 50px;
+  border-radius: 100px;
+  background: #F5F5F5;
+  text-align: center;
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */
+  padding-top: 12px;
+}
+
+.grayLinkButtonTextSmall {
+  display: inline-block;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 32.5px;
+  border-radius: 30px;
+  background: rgba(37, 37, 37, 0.15);
+  text-align: center;
+  padding-top: 6.5px;
+}
+
+.grayLinkButtonTextSmall a {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.grayLinkButtonImgPlus {
+  width: 50px;
+  height: 50px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  background-color: #E9E9E9;
+  text-align: center;
+}
+
+.grayLinkButtonImgPlus img {
+  width: 20px;
+  margin-top: 13px;
 }
 
 .testMenu {
@@ -155,7 +472,6 @@ body {
   }
 }
 
-body {
-  color: var(--txtColor);
-  background-color: var(--bgColor);
+.testColor {
+  color: cadetblue;
 }

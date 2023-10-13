@@ -1,4 +1,6 @@
 // index.js
+log('index.js')
+
 document.addEventListener('DOMContentLoaded', function () {
   console.log('document is ready.', location.hostname);
 

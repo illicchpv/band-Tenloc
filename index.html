@@ -8,17 +8,17 @@
   <meta name="author" content="Pavel_Illich">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="icon" type="image/png" href="./asset/img/favicon.png">
   <title>Tenloc | Поиск и бронирование экскурсий</title>
 
-  <link rel="preload" href="./fonts/candal-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-v26-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-v26-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-v26-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-v26-cyrillic_latin-800.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-v26-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-v26-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/candal-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
   <style>
     .themeLight {
@@ -42,8 +42,10 @@
 
   <link rel="stylesheet" href="./css/index.css">
 
-  <script src="./index.js" defer></script>
-  <script src="./testmenu.js" defer></script>
+  <script src="./common/common.js" defer></script>
+  <script src="./common/testmenu.js" defer></script>
+  
+  <script src="./page-index/index.js" defer></script>
 </head>
 
 <body style="display: none;">
@@ -51,6 +53,122 @@
   <h1 class="monserat">font-family: Montserrat</h1>
   <h1 class="candal">font-family: Candal</h1>
   <h1 class="roboto">font-family: Roboto</h1>
+  <h2 class="testColor">_var $testColor</h2>
+  <hr>
+  <h3>желтые кнопки</h3>
+  <div class="box">
+    <div class="yellowLinkButtonImg">
+      <a href="#" class="">Направления<img src="./asset/svg/arrow-down1.svg" alt=""></a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="yellowImgLinkButton">
+      <a href="#" class=""><img src="./asset/svg/loupe1.svg" alt="">Найти</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="yellowLinkButton">
+      <a href="#" class="">15 экскурсий</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="yellowLinkButton yellowLinkButton_all">
+      <a href="#" class="">Все экскурсии</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="yellowLinkButton yellowLinkButton_review">
+      <a href="#" class="">Оставить отзыв</a>
+    </div>
+  </div>
+  <br><br>
+  <hr>
+  <h3>серые кнопки</h3>
+  <div class="box">
+    <div class="grayLinkButtonImg">
+      <a href="#" class=""><img src="./asset/svg/love1.svg" alt=""></a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="grayLinkButtonText">
+      <a href="#" class="">Войти</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="grayLinkButtonTextSmall">
+      <a href="#" class="">Дубай</a>
+    </div>
+    <div class="grayLinkButtonTextSmall">
+      <a href="#" class="">Стамбул</a>
+    </div>
+    <div class="grayLinkButtonTextSmall">
+      <a href="#" class="">Санкт-петербург</a>
+    </div>
+    <div class="grayLinkButtonTextSmall">
+      <a href="#" class="">Казань</a>
+    </div>
+  </div>
+  <br><br>
+  <div class="box">
+    <div class="grayLinkButtonImgPlus">
+      <a href="#" class=""><img src="./asset/svg/plus2.svg" alt=""></a>
+    </div>
+  </div>
+
+
+
+  <!-- <a class="buttonLink buttonLink_dir"><i></i>Направления<i></i></a>
+  <a class="buttonLink buttonLink_gfing"><i></i><i></i></a>
+  <a class="buttonLink buttonLink_love"><i></i><i></i></a>
+  <a class="buttonLink buttonLink_enter"><i></i>Войти<i></i></a>
+  <br>
+  <a class="buttonLink buttonLink_find"><i></i>Найти<i></i></a>
+  <br>
+  <a class="buttonLink buttonLink_ntrip"><i>15</i>экскурсий<i></i></a>
+  <a class="buttonLink buttonLink_ntrip"><i>17</i>экскурсий<i></i></a>
+  <a class="buttonLink buttonLink_ntrip"><i>2</i>экскурсий<i></i></a>
+  <br>
+  <a class="buttonLink buttonLink_ext"><i></i>Все&nbsp;экскурсии<i></i></a>
+  <hr> -->
+  <br><br><br>
+
+  
+<hr>
+  <div class="box">
+    <div class="btnYLink btnYLink_dir">
+      <a href="#">
+        <span>Направления</span>
+      </a>
+    </div>
+    <div class="btnYLink btnYLink_love">
+      <a href="#">
+        <span>ffff</span><span>ffff</span>
+      </a>
+    </div>
+    <!-- <div class="btnYLink btnYLink_love">
+      <a href="#">
+        <i></i><i></i>
+      </a>
+    </div> -->
+  </div>
+
+  <!-- <br><br>
+  <div class="btnYLink btnYLink_review">
+    <a href="#">
+      <i></i>Оставить&nbsp;отзыв<i></i>
+    </a>
+  </div>
+
+  <br>
+  <hr>
+  <a class="buttonLink"><i></i>Оставить&nbsp;отзыв<i></i></a>
+  <br> -->
 
 </body>
 

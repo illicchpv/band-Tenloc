@@ -1,0 +1,161 @@
+// _blocks.scss
+
+// --------------------
+.yellowLinkButtonImg{
+  width: 186.25px;
+  height: 50px;  
+  border-radius: 100px;
+  background-color: #FFD600;
+  text-align: center;
+}
+.yellowLinkButtonImg a{
+  margin-top: 12.22px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  color: #252525;
+  font-family: $Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.yellowLinkButtonImg img{
+  width: 8px;
+  margin-left: 15px;
+}
+// --------------------
+.yellowImgLinkButton{
+  width: 134px;
+  height: 55px;
+  border-radius: 100px;
+  background-color: #FFD600;
+  text-align: center;
+}
+.yellowImgLinkButton a{
+  margin-top: 19px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  color: #000;
+  font-family: $Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+}
+.yellowImgLinkButton img{
+  width: 15px;
+  margin-right: 9px;
+}
+// ------------------
+.yellowLinkButton{
+  width: 131.42px;
+  height: 34.398px;
+  border-radius: 100px;
+  background-color: #FFD600;
+  text-align: center;
+}
+.yellowLinkButton a{
+  margin-top: 8px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  color: #252525;
+  text-align: center;
+  font-family: $Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+}
+// ---------------------
+.yellowLinkButton_all{
+  width: 194.375px;
+  height: 55px;  
+}
+.yellowLinkButton_all a{
+  margin-top: 18px;
+
+  color: #000;
+  font-size: 15px;
+}
+// --------------------------
+.yellowLinkButton_review{
+  width: 175.5px;
+  height: 55px;  
+}
+.yellowLinkButton_review a{
+  margin-top: 18px;
+
+  color: #000;
+  font-family: $Montserrat;
+  font-size: 15px;
+}
+// --------------------------
+.grayLinkButtonImg{
+  width: 50px;
+  height: 50px;  
+  border-radius: 100px;
+  background: #F5F5F5;  
+  text-align: center;
+}
+.grayLinkButtonImg img{
+  width: 22px;
+  margin-top: 15px;
+}
+// --------------------------
+.grayLinkButtonText{
+  width: 114.25px;
+  height: 50px;  
+  border-radius: 100px;
+  background: #F5F5F5;  
+  text-align: center;
+
+  color: #252525;
+  font-family: $Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.66; /* 166.667% */  
+
+  padding-top: 12px;
+}
+// --------------------------
+.grayLinkButtonTextSmall{
+  display: inline-block;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 32.5px;
+
+  border-radius: 30px;
+  // opacity: 0.15;
+  background: rgba(#252525, 0.15) ;
+  text-align: center;
+  
+  padding-top: 6.5px;
+}
+.grayLinkButtonTextSmall a{
+  color: #FFF;
+  font-family: $Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+// --------------------------
+.grayLinkButtonImgPlus{
+  width: 50px;
+  height: 50px;  
+  width: 46px;
+  height: 46px;  
+  border-radius: 50%;
+  background: #F5F5F5;  
+  background-color: #E9E9E9;
+  text-align: center;
+}
+.grayLinkButtonImgPlus img{
+  width: 20px;
+  margin-top: 13px;
+}
+// --------------------------

@@ -1,0 +1,36 @@
+// _common.scss
+@import '../common/var';
+@import '../common/font';
+@import '../common/normalize';
+
+*{ 
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: 'Montserrat', sans-serif;
+  color: var(--txtColor);
+  background-color: var(--bgColor);
+}
+
+.montserrat, font1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.candal, font2 {
+  font-family: 'Candal', sans-serif;
+}
+
+.roboto, font3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+@import '../common/blocks';

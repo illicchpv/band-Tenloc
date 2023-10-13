@@ -1,0 +1,42 @@
+// used:
+// $transitionTime
+.testMenu {
+  background-color: #f4f1f1;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+
+  height: 5px;
+  overflow: hidden;
+  transition: height $transitionTime; // 0.3s
+
+  &:hover{
+    height: 25px;
+    overflow: unset;
+  }
+
+  &__pages {
+    display: flex;
+    gap: 7%;
+  }
+
+  &__page a{
+    color: black;
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid rgb(0 0 0 / 0.3);
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 1000px){
+    & i{
+      display: none;
+    }
+  }
+}
