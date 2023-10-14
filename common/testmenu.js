@@ -1,13 +1,18 @@
 // testmenu.js
 log('testmenu.js')
 document.addEventListener('DOMContentLoaded', function () {
-
   // если стр. запущене не локально, ничего не добавляем
-  if (location.hostname !== '127.0.0.1')
-    return;
+  if (location.hostname !== '127.0.0.1') {
+    return
+  }
 
-  const $body = document.querySelector("body")
-  $body.insertAdjacentHTML('afterbegin',
+  let btnText = 'light->dark'
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  if (darkThemeMq.matches) {
+    btnText = 'dark->light'
+  }
+  
+  document.querySelector("body").insertAdjacentHTML('afterbegin',
     `
   <!-- верхнее техническое меню. ну может протестировать что-то понадобиться -->
   <div class="testMenu">
@@ -25,19 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
         <a href="./testpage3.html"><i>test</i> page3</a>
       </div>
       <div class="testMenu__page">
-        <button onclick="themeChange()" title="сменить схему цветов"><span id="theme">light<span></button>
+        <button onclick="themeChange()" title="сменить схему цветов"><span id="theme">${btnText}<span></button>
       </div>      
     </div>
   </div>
   `);
-
-  themeChange(true)
 });
-function themeChange(displayOnly) {
-  if (!displayOnly) {
-    document.documentElement.classList.toggle('themeLight')
-    document.documentElement.classList.toggle('themeDark')
-  }
+function themeChange() {
+  document.documentElement.classList.toggle('themeLight')
+  document.documentElement.classList.toggle('themeDark')
   if (document.documentElement.classList.contains('themeDark')) {
     document.getElementById('theme').innerText = 'dark->light'
   } else {

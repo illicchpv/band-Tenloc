@@ -16,3 +16,6 @@
 .testColor{
   color: $testColor;
 }
+.testColor2{
+  color: var(--sampleColor);
+}

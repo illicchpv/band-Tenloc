@@ -22,8 +22,10 @@
 
   <style>
     .themeLight {
-      --txtColor: black;
-      --bgColor: white;
+      --txtColor: rgb(0 0 0);
+      --bgColor: rgb(255, 255, 255);
+      --sampleColor: rgb(0, 96, 223); /*#0060df;*/
+
       --color-primary: #0060df;
       --color-secondary: #fbfbfe;
       --color-accent: #fd6f53;
@@ -31,8 +33,10 @@
     }
 
     .themeDark {
-      --txtColor: white;
-      --bgColor: black;
+      --txtColor: rgb(255, 255, 255);
+      --bgColor: rgb(0 0 0);
+      --sampleColor: rgb(23, 237, 144); /*#17ed90;*/
+
       --color-primary: #17ed90;
       --color-secondary: #2a2c2d;
       --color-accent: #12cdea;
@@ -54,6 +58,7 @@
   <h1 class="candal">font-family: Candal</h1>
   <h1 class="roboto">font-family: Roboto</h1>
   <h2 class="testColor">_var $testColor</h2>
+  <h2 class="testColor2">color: var(--sampleColor)</h2>
   <hr>
   <h3>желтые кнопки</h3>
   <div class="box">
