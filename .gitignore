@@ -1,6 +1,4 @@
 # not for server
-/.vscode 
+/.vscode
 /.idea
-.---*.*
-
-
+/.editorconfig
