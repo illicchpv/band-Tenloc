@@ -1,7 +1,7 @@
 // _common.scss
-@import '../common/var';
-@import '../common/font';
-@import '../common/normalize';
+@import '../common/_var';
+@import '../common/_font';
+@import '../common/_normalize';
 
 *{ 
   box-sizing: border-box;
@@ -33,4 +33,5 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-@import '../common/blocks';
+@import '../common/_blocks';
+@import '../common/_blocksButton';
