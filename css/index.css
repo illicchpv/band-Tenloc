@@ -244,6 +244,28 @@ template {
   display: none;
 }
 
+.themeLight {
+  --txtColor: rgb(0 0 0);
+  --bgColor: rgb(255, 255, 255);
+  --sampleColor: rgb(0 96 223); /*#0060df;*/
+  --sampleClr: 0 96 223; /*#0060df;*/
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+
+.themeDark {
+  --txtColor: rgb(255, 255, 255);
+  --bgColor: rgb(0 0 0);
+  --sampleColor: rgb(23, 237, 144); /*#17ed90;*/
+  --sampleClr: 23 237 144; /*#17ed90;*/
+  --color-primary: #17ed90;
+  --color-secondary: #2a2c2d;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
