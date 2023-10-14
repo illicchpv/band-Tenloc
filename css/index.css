@@ -477,5 +477,9 @@ body {
 }
 
 .testColor2 {
-  color: var(--sampleColor);
+  color: rgb(var(--sampleClr)/0.5);
+}
+
+.testColor3 {
+  color: rgb(var(--sampleClr)/0.5);
 }

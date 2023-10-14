@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" href="./asset/img/favicon.png">
   <title>Tenloc | Поиск и бронирование экскурсий</title>
 
+<!-- сомниваюсь что это помогает
   <link rel="preload" href="./asset/font/candal-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -18,13 +19,15 @@
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-800.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./asset/font/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./asset/font/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+-->
 
   <style>
     .themeLight {
       --txtColor: rgb(0 0 0);
       --bgColor: rgb(255, 255, 255);
-      --sampleColor: rgb(0, 96, 223); /*#0060df;*/
+      --sampleColor: rgb(0 96 223); /*#0060df;*/
+      --sampleClr: 0 96 223; /*#0060df;*/
 
       --color-primary: #0060df;
       --color-secondary: #fbfbfe;
@@ -36,6 +39,7 @@
       --txtColor: rgb(255, 255, 255);
       --bgColor: rgb(0 0 0);
       --sampleColor: rgb(23, 237, 144); /*#17ed90;*/
+      --sampleClr: 23 237 144; /*#17ed90;*/
 
       --color-primary: #17ed90;
       --color-secondary: #2a2c2d;
@@ -57,8 +61,16 @@
   <h1 class="monserat">font-family: Montserrat</h1>
   <h1 class="candal">font-family: Candal</h1>
   <h1 class="roboto">font-family: Roboto</h1>
-  <h2 class="testColor">_var $testColor</h2>
-  <h2 class="testColor2">color: var(--sampleColor)</h2>
+  <hr>
+  <h3>
+    Цвет <br>
+    _var.scss: $testColor: cadetblue; <br>
+    index.html: --sampleClr: 0 96 223; /*#0060df;*/ <br>
+    <br><i>варианты использования:</i>
+  </h3>
+  <h2 class="testColor">{ color: $testColor; ...</h2>
+  <h2 class="testColor2">{ color: rgb(var(--sampleClr) / 0.5); ...</h2>
+  <h2 class="testColor3">{ color: clr(sampleClr, 0.5); ...</h2>
   <hr>
 
 </body>
