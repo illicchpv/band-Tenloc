@@ -1,6 +1,10 @@
 // index.js
 log('index.js')
 
+const header_Onload = function ({incId, incFrom, incClass, docEl, externEl, externUrl}) {
+  externEl.querySelector("#url").innerHTML = externUrl
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   console.log('document is ready.', location.hostname);
 
@@ -15,5 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.remove('themeDark')
   }
 
-  document.querySelector("body").style.display = ''
+  // IncludHtml.init("./common", true, includ_Finish);
+  IncludHtml.init("./common", true, () => { 
+    document.querySelector("body").style.display = ''; 
+  });
 });
