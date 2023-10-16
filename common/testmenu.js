@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btnText = 'dark->light'
   }
   
-  document.querySelector("body").insertAdjacentHTML('afterbegin',
+  document.querySelector("body .root1").insertAdjacentHTML('afterbegin',
     `
   <!-- верхнее техническое меню. ну может протестировать что-то понадобиться -->
   <div class="testMenu">

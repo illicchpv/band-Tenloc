@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru" class="themeLight otherClass">
-<!-- 
+  <!-- 
   сайт  https://illicchpv.github.io/band-Tenloc/
  -->
 
-<head>
-  <meta name="author" content="Pavel_Illich">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./asset/img/favicon.png">
-  <title>Tenloc | Поиск и бронирование экскурсий</title>
+  <head>
+    <meta name="author" content="Pavel_Illich" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./asset/img/favicon.png" />
+    <title>Tenloc | Поиск и бронирование экскурсий</title>
 
-<!-- сомниваюсь что это помогает
+    <!-- сомниваюсь что это помогает
   <link rel="preload" href="./asset/font/candal-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./asset/font/montserrat-v26-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,49 +22,56 @@
   <link rel="preload" href="./asset/font/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
 -->
 
-  <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
 
-  <script src="./common/common.js" defer></script>
-  <script src="./common/testmenu.js" defer></script>
+    <script src="./common/common.js" defer></script>
+    <script src="./common/testmenu.js" defer></script>
 
-  
-  <script src="./common/IncludHtml.js" defer></script>
-  <script src="./page-index/index.js" defer></script>
-</head>
+    <script src="./common/IncludHtml.js" defer></script>
+    <script src="./page-index/index.js" defer></script>
+  </head>
 
-<body style="display: none;">
+  <body>
+    <div class="root1" style="display: none;">
+      <!-- header -->
+      <div
+        class="incs"
+        data-incs='{
+          "onLoadCalback": "element_Onload",
+          "incFile": "./common/_header.inc.html",
+          "incFromId": "incHeader"
+        }'
+      ></div>
 
-  <div class="incs"
-    data-incs='{
-      "onLoadCalback": "element_Onload",
-      "incFile": "./common/_header.inc.html",
-      "incFromId": "incHeader"
-    }'
-  ></div>
+      <h1 class="monserat">font-family: Montserrat</h1>
+      <h1 class="candal">font-family: Candal</h1>
+      <h1 class="roboto">font-family: Roboto</h1>
+      <hr />
+      <h3>
+        Цвет <br />
+        _var.scss: $testColor: cadetblue; <br />
+        index.html: --sampleClr: 0 96 223; /*#0060df;*/ <br />
+        <br /><i>варианты использования:</i>
+      </h3>
+      <h2 class="testColor">{ color: $testColor; ...</h2>
+      <h2 class="testColor2">{ color: rgb(var(--sampleClr) / 0.5); ...</h2>
+      <h2 class="testColor3">{ color: clr(sampleClr, 0.5); ...</h2>
+      <hr />
 
-  <h1 class="monserat">font-family: Montserrat</h1>
-  <h1 class="candal">font-family: Candal</h1>
-  <h1 class="roboto">font-family: Roboto</h1>
-  <hr>
-  <h3>
-    Цвет <br>
-    _var.scss: $testColor: cadetblue; <br>
-    index.html: --sampleClr: 0 96 223; /*#0060df;*/ <br>
-    <br><i>варианты использования:</i>
-  </h3>
-  <h2 class="testColor">{ color: $testColor; ...</h2>
-  <h2 class="testColor2">{ color: rgb(var(--sampleClr) / 0.5); ...</h2>
-  <h2 class="testColor3">{ color: clr(sampleClr, 0.5); ...</h2>
-  <hr>
+      <!-- footer -->
+      <div
+        class="incs"
+        data-incs='{
+          "onLoadCalback": "element_Onload",
+          "incFile": "./common/_footer.inc.html",
+          "incFromId": "incFooter"
+        }'
+      ></div>
+    </div>
+    <!-- /root1 -->
 
-  <div class="incs"
-    data-incs='{
-      "onLoadCalback": "element_Onload",
-      "incFile": "./common/_footer.inc.html",
-      "incFromId": "incFooter"
-    }'
-  ></div>
-
-</body>
-
+    <div class="root2">
+      <img class="root2__img" src="./asset/img/favicon.png" alt="loading...">
+    </div>
+  </body>
 </html>

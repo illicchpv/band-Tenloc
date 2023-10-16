@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   IncludHtml.doIncludAll(".incs", () =>{
     console.log("IncludHtml Finish: Ok"); // вызывается когда IncludHtml всё сделал
-    document.querySelector("body").style.display = ''; 
+    document.querySelector("body .root1").style.display = ''; 
+    document.querySelector("body .root2").style.display = 'none'; 
   });
 });

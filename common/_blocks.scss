@@ -1,1 +1,34 @@
 // _blocks.scss
+// анимация пока загружается страничка
+.root2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.root2__img{
+  width: 100px;
+  height: 100px;
+  animation: waitLoad 2s infinite;
+}
+@keyframes waitLoad {
+  0% { 
+    transform: rotate(0deg);
+  }
+  10% { 
+    transform: rotate(150deg);
+    transform: translateY(5px);
+  }
+  50% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+}
+// /анимация пока загружается страничка

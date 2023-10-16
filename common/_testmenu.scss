@@ -20,14 +20,21 @@
   &__pages {
     display: flex;
     gap: 7%;
+
+    & button{
+      // display: none;
+      padding: 6px 10px 1px;
+      border-radius: 0;
+      border: 1px solid rgb(0 0 0 / 0.3);
+    }
   }
 
   &__page a{
     color: black;
     display: block;
-    padding: 3px 10px;
+    padding: 6px 10px 1px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0;
     border: 1px solid rgb(0 0 0 / 0.3);
 
     &:hover{
