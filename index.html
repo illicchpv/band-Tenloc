@@ -34,7 +34,13 @@
 
 <body style="display: none;">
 
-  <div class="incs incFrom__header incClass_incsHeader" data-incs__calback="element_Onload"></div>
+  <div class="incs"
+    data-incs='{
+      "onLoadCalback": "element_Onload",
+      "incFile": "./common/_header.inc.html",
+      "incFromId": "incHeader"
+    }'
+  ></div>
 
   <h1 class="monserat">font-family: Montserrat</h1>
   <h1 class="candal">font-family: Candal</h1>
@@ -51,7 +57,13 @@
   <h2 class="testColor3">{ color: clr(sampleClr, 0.5); ...</h2>
   <hr>
 
-  <div class="incs incFrom__footer incClass_incsFooter" data-incs__calback="element_Onload"></div>
+  <div class="incs"
+    data-incs='{
+      "onLoadCalback": "element_Onload",
+      "incFile": "./common/_footer.inc.html",
+      "incFromId": "incFooter"
+    }'
+  ></div>
 
 </body>
 

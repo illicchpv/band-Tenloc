@@ -1,9 +1,10 @@
 // index.js
 log('index.js')
 
-const header_Onload = function ({incId, incFrom, incClass, docEl, externEl, externUrl}) {
-  externEl.querySelector("#url").innerHTML = externUrl
-}
+const element_Onload = function (p) { // обработчик вставляемых элементов
+  p.extEl.innerHTML = IncludHtml.replaceAll(p.extEl.innerHTML, "../img/", "./img/");
+  p.extEl.querySelector("#url").innerHTML = p.incFile
+};
 
 document.addEventListener('DOMContentLoaded', function () {
   console.log('document is ready.', location.hostname);
@@ -19,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.remove('themeDark')
   }
 
-  // IncludHtml.init("./common", true, includ_Finish);
-  IncludHtml.init("./common", true, () => { 
+  IncludHtml.doIncludAll(".incs", () =>{
+    console.log("IncludHtml Finish: Ok"); // вызывается когда IncludHtml всё сделал
     document.querySelector("body").style.display = ''; 
   });
 });
